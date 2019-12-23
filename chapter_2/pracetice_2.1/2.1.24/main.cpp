@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-#define SIZE (10 * 10)
+#define SIZE (10 * 1)
 
 using namespace std;
 
@@ -23,16 +23,4 @@ int main(void)
     cout << InsertSort<vector<int>, int>::isSorted(nums) << endl;
 
     return 0;
-}
-
-
-//插入排序算法
-template<class T>
-void insert_sort(T & nums)
-{
-    for (int i = 1; i < nums.size(); ++i)
-    {
-        for (int j = i; j > 0 && nums[j] < nums[j - 1]; --j)
-            //交换nums[j], nums[j - 1];
-    }
 }
